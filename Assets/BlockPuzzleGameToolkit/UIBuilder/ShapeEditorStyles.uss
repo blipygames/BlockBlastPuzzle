@@ -1,0 +1,76 @@
+.grid-row {
+    flex-direction: row;
+    margin-bottom: 2px; /* Adjust this value to change vertical spacing */
+}
+
+.grid-cell {
+    width: 60px;
+    height: 60px;
+    margin-right: 2px; /* Horizontal spacing */
+    padding: 0;
+    border-width: 0;
+    border-radius: 0;
+    background-color: rgb(93, 93, 93);
+}
+
+.grid-cell.active {
+    background-color: rgb(150, 150, 150);
+}
+
+#title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#nav-container {
+    flex-direction: row;
+    margin-bottom: 10px;
+    width: 320px;
+}
+
+#index-field {
+    width: 30px;
+}
+
+#action-container {
+    flex-direction: row;
+    margin-bottom: 10px;
+    width: 320px;
+}
+
+#grid-container {
+    width: 320px;
+}
+
+Button {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-width: 0;
+}
+
+Button:hover {
+    background-color: rgb(77, 77, 77);
+}
+
+.classic-mode-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #2d2d2d;
+    width: 325px;
+}
+
+.classic-mode-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.classic-mode-field {
+    margin-top: 5px;
+}

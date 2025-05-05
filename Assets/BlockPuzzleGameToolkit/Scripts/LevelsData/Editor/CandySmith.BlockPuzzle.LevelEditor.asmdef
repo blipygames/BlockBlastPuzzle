@@ -1,0 +1,24 @@
+{
+  "name": "CandySmith.BlockPuzzle.LevelEditor",
+  "rootNamespace": "",
+  "references": [
+    "GUID:343deaaf83e0cee4ca978e7df0b80d21",
+    "GUID:d3bf71b33c0c04eb9bc1a8d6513d76bb",
+    "GUID:c912612fdd262440c8671324bf615a5d",
+    "GUID:00dd4a7ac8c24c898083910c81898ecc",
+    "GUID:ac6e78962cfc743b9a5fc5f5a808aa72",
+    "GUID:b25ad8286798741e3b2cc3883283e669",
+    "GUID:75bdbcf23199f4cfb86c610d1d946666"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

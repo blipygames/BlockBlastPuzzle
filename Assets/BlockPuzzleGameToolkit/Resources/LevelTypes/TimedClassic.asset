@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e0a7b181df4ac392d6eab85851bb80, type: 3}
+  m_Name: TimedClassic
+  m_EditorClassIdentifier: 
+  elevelType: 2
+  targets: []
+  prePlayPopup: {fileID: 0}
+  preFailedPopup: {fileID: 3156901565763242253, guid: fc7c984cd7ce14b83ae0e023979e59ff, type: 3}
+  failedPopup: {fileID: 2860025715803924679, guid: c26050f58fd004d66abe5b218ab4a37a, type: 3}
+  preWinPopup: {fileID: 0}
+  winPopup: {fileID: 0}
+  selectable: 0
+  singleColorMode: 0
+  stateHandler: {fileID: 11400000, guid: cc7f7c65d0a8c47c3b927759f5b6e4f8, type: 2}

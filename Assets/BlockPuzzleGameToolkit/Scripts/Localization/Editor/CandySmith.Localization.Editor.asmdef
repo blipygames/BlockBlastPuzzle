@@ -1,0 +1,27 @@
+{
+  "name": "CandySmith.Localization.Editor",
+  "rootNamespace": "",
+  "references": [
+    " UnityEngine",
+    " UnityEditor",
+    "UnityEditor.UI",
+    "Unity.TextMeshPro.Editor",
+    "Unity.TextMeshPro",
+    "Reordable",
+    "CandySmith.BlockPuzzle.Main",
+    "CandySmith.Ads",
+    "CandySmith.IAP",
+    "DOTween.Modules"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

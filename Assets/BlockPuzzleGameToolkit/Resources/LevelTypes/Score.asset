@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e0a7b181df4ac392d6eab85851bb80, type: 3}
+  m_Name: Score
+  m_EditorClassIdentifier: 
+  elevelType: 0
+  targets:
+  - {fileID: 11400000, guid: a101d12b2edd14116a6ec86daa24704b, type: 2}
+  prePlayPopup: {fileID: 7133696379529665219, guid: c2e030f1270624d208a8112e4c91c504, type: 3}
+  preFailedPopup: {fileID: 1194946714372672274, guid: 0845287dd41884c6087d82d3bc15ce85, type: 3}
+  failedPopup: {fileID: 8062251005017305266, guid: 9b7adb32b3a684f209bd9ba53040b934, type: 3}
+  preWinPopup: {fileID: 3014647371239592607, guid: 20bd27a4973704323955113b41e8c139, type: 3}
+  winPopup: {fileID: 0}
+  selectable: 1
+  singleColorMode: 1
+  stateHandler: {fileID: 11400000, guid: 79200a61dd5e04e98a13ba9538ec9a44, type: 2}

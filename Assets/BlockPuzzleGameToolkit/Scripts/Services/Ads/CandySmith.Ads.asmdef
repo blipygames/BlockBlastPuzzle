@@ -1,0 +1,28 @@
+{
+  "name": "CandySmith.Ads",
+  "rootNamespace": "",
+  "references": [
+    "GUID:ff6de30450f3748908ff580f6ec64d9a",
+    "GUID:760a4c7888534400e882b82c5b3fba06"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [
+    {
+      "name": "com.unity.ads",
+      "expression": "",
+      "define": "UNITY_ADS"
+    },
+    {
+      "name": "com.unity.services.levelplay",
+      "expression": "",
+      "define": "IRONSOURCE"
+    }
+  ],
+  "noEngineReferences": false
+}

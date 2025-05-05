@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9f53cd3f21de40d58185ae98976b90b, type: 3}
+  m_Name: TutorialSettings
+  m_EditorClassIdentifier: 
+  tutorialShapes:
+  - {fileID: 11400000, guid: 99204750325178a44bd78a7ca406fb6f, type: 2}
+  - {fileID: 11400000, guid: 1b920f6af6c78431ea3e2fad9ea18091, type: 2}
+  - {fileID: 11400000, guid: eb852a6d904ed439295f6a6b4c43b978, type: 2}
+  - {fileID: 11400000, guid: 99204750325178a44bd78a7ca406fb6f, type: 2}
+  - {fileID: 11400000, guid: b823ac7471de26e44a051bbbfe6fec47, type: 2}
+  - {fileID: 11400000, guid: aa4fe1315e425426a92b4919e1e5c8fa, type: 2}
+  tutorialLevels:
+  - {fileID: 11400000, guid: ca7334e723a92475e812ae922e2b48d3, type: 2}
+  - {fileID: 11400000, guid: a9c750a376f8941a8a953c3d7ba9d464, type: 2}

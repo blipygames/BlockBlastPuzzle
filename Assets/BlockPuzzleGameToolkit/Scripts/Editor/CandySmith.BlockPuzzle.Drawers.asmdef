@@ -1,0 +1,23 @@
+{
+  "name": "CandySmith.BlockPuzzle.Drawers",
+  "rootNamespace": "",
+  "references": [
+    "GUID:2bafac87e7f4b9b418d9448d219b01ab",
+    "GUID:d3bf71b33c0c04eb9bc1a8d6513d76bb",
+    "GUID:00dd4a7ac8c24c898083910c81898ecc",
+    "GUID:ac6e78962cfc743b9a5fc5f5a808aa72",
+    "GUID:b25ad8286798741e3b2cc3883283e669",
+    "GUID:75bdbcf23199f4cfb86c610d1d946666"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

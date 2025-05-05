@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e2782dbed2b4978a4534cef73e33839, type: 3}
+  m_Name: ItemTemplate 5
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 8863438563086167043, guid: 9732692a1bd4a4271b12a0ba65cdc4e0, type: 3}
+  backgroundColor: {r: 0.11372549, g: 0.16470589, b: 0.35686275, a: 1}
+  underlayColor: {r: 1, g: 0.5647059, b: 1, a: 1}
+  bottomColor: {r: 0.59607846, g: 0.17254902, b: 0.88235295, a: 1}
+  topColor: {r: 1, g: 0.6556604, b: 1, a: 1}
+  leftColor: {r: 0.6784314, g: 0.2509804, b: 0.90588236, a: 1}
+  rightColor: {r: 0.93333334, g: 0.49803922, b: 0.98039216, a: 1}
+  overlayColor: {r: 0.78431374, g: 0.3529412, b: 0.9372549, a: 1}
+  customItemPrefab: {fileID: 0}

@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/BlockPuzzle/UIBuilder/RootStyle.uss?fileID=7433441132597879392&amp;guid=98e15f087cce422ca0b92be25dc59b2e&amp;type=3#RootStyle" />
+    <ui:VisualElement style="flex-grow: 1; justify-content: center; align-self: stretch; align-items: stretch; padding-right: 0;">
+        <ui:VisualElement name="VisualElement" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); flex-direction: row; align-items: flex-start; justify-content: center; flex-wrap: nowrap; flex-basis: auto;">
+            <ui:Button text="Play level" display-tooltip-when-elided="true" name="PlayButton" enable-rich-text="true" style="flex-grow: 1; width: 65px;" />
+            <ui:Button text="Save" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Save" style="padding-left: 23px;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 0; flex-direction: row; align-items: stretch; justify-content: flex-start; align-self: auto;">
+            <ui:Button text="&lt;&lt;" display-tooltip-when-elided="true" name="PrevLevel" style="flex-grow: 1;" />
+            <ui:IntegerField value="1" name="LevelNum" style="flex-grow: 1;" />
+            <ui:Button text="&gt;&gt;" display-tooltip-when-elided="true" name="NextLevel" style="flex-grow: 1;" />
+            <ui:Button text="+" display-tooltip-when-elided="true" name="NewLevel" style="flex-grow: 0; font-size: 10px;" />
+            <ui:Button text="-" display-tooltip-when-elided="true" name="DelLevel" style="flex-grow: 0; font-size: 10px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

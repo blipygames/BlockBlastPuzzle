@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e0a7b181df4ac392d6eab85851bb80, type: 3}
+  m_Name: BonusItem
+  m_EditorClassIdentifier: 
+  elevelType: 1
+  targets:
+  - {fileID: 11400000, guid: 12f6802e4643f40148f460acf831cafc, type: 2}
+  - {fileID: 11400000, guid: ed67ff4519d40482b807761925a30dec, type: 2}
+  - {fileID: 11400000, guid: f4eba0b18c2014528a4036dca51e5039, type: 2}
+  - {fileID: 11400000, guid: 32bb1a5aabb76418d9540dfcc3861b71, type: 2}
+  - {fileID: 11400000, guid: 5482c8ad9b4404200ad40dc5e0f36405, type: 2}
+  - {fileID: 11400000, guid: 32e9f8bcbba534fc5968df591158bf38, type: 2}
+  prePlayPopup: {fileID: 4178832618095490807, guid: a54bc7e44c36845d88c997af477f8eaa, type: 3}
+  preFailedPopup: {fileID: 1194946714372672274, guid: 0845287dd41884c6087d82d3bc15ce85, type: 3}
+  failedPopup: {fileID: 5818593289188755329, guid: b2e87c08fe0b34f2f8dafffa48eee43d, type: 3}
+  preWinPopup: {fileID: 6628620886218473075, guid: 3308a34a723b94018abfeb98e7033f43, type: 3}
+  winPopup: {fileID: 0}
+  selectable: 1
+  singleColorMode: 1
+  stateHandler: {fileID: 11400000, guid: 79200a61dd5e04e98a13ba9538ec9a44, type: 2}

@@ -1,0 +1,61 @@
+COINSSHOP : Tienda de Monedas
+FREE : GRATIS
+BUYTIPS : Comprar Pistas
+GETFREE : Obtener Gratis
+DAILYREWARD : Recompensas Diarias
+DAY : Día
+THANKS : ¡Gracias!
+LOADING : Cargando...
+LUCKYSPIN : <sprite index=0 color=#FE96CD>  GIRO DE SUERTE  <sprite index=0 color=#FE96CD>
+OK : OK
+YOURWIN : ¡Has Ganado!
+NOADSLABEL1 : Haz esta compra para eliminar los anuncios permanentemente
+NOADSLABEL2 : Los videos de recompensa son opcionales y están disponibles después de la compra
+BUY : COMPRAR
+OUTOFLIVES : SIN VIDAS
+REFILLTHELIVES : ¿Rellenar las vidas?
+OUTOFTIME : SIN TIEMPO
+REFILLTHETIME : ¿Rellenar el tiempo?
+GIFT : Regalo
+LEVELCLEARED : ¡NIVEL COMPLETADO!
+SETTINGS : Ajustes
+SHOP : TIENDA
+PRIVACY : PRIVACIDAD
+QUITTHEGAME : Salir del juego
+DOYOUWANTTOQUIT : ¿Realmente quieres salir?
+YES : Sí
+NO : NO
+COMINGSOON : Reinicia el juego para jugar de nuevo o espera la próxima actualización
+YOUWIN : ¡Has Ganado!
+NEXTLEVEL : Siguiente Nivel
+SCORE : Puntuación
+POINTS : Puntos
+REVIVEWITHNEWSHAPES : ¿Revivir con nuevas formas?
+WHATCHADS : Ver Anuncios
+CONTINUE : Continuar
+YOULOSE : Has Perdido...
+RETRY : Reintentar
+ALMOST : Casi ahí...
+ARCADEMODE : MODO ARCADE
+STAGE : ETAPA {stage}
+LEVEL : NIVEL {level}
+MOSTPOPULAR : Más Popular
+BESTOFFER : MEJOR Oferta
+NOADS : SIN ANUNCIOS
+FREESPIN : Giro GRATIS
+SOUNDS : Sonidos
+MUSIC : Música
+VIBRATION : Vibración
+GAMEOVER : Fin del Juego
+YOURSCORE : Tu Puntuación
+BESTSCORE : MEJOR Puntuación
+NEWRECORD : ¡Nuevo Récord!
+EXITGAME : Salir del Juego
+ADVENTURE : ARCADA
+CLASSIC : CLÁSICO
+TUTORIAL : Tutorial
+RESTORE_PURCHASES : RESTAURAR COMPRAS
+TIMED : TIEMPO
+CONTINUEWITHEXTRASECONDS : EXTRA <color=yellow>+{continueTimerBonus}</color> seg
+YOUHAVETIMELEFT : Te quedan <color=yellow>{timeLeft}</color> min
+CONTINUEORLOSEPROGRESS : ¿Nuevas formas o perder el progreso?

@@ -1,0 +1,71 @@
+.grid-row {
+    flex-direction: row;
+    margin-bottom: 2px; /* Adjust this value to change vertical spacing */
+}
+
+.grid-cell {
+    width: 45px;
+    height: 45px;
+    margin-right: 2px; /* Horizontal spacing */
+    padding: 0;
+    border-width: 0;
+    border-radius: 0;
+    background-color: rgb(93, 93, 93);
+}
+
+.tool-cell {
+    width: 45px;
+    height: 45px;
+    margin-right: 2px; /* Horizontal spacing */
+    padding: 0;
+    border-width: 0;
+    border-radius: 0;
+    background-color: rgb(232, 242, 255);
+}
+
+.grid-cell.active {
+    background-color: rgb(93, 93, 93);
+}
+
+.tool-cell.pressed {
+    background-color: rgb(123, 123, 123);
+}
+
+#title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#nav-container {
+    flex-direction: row;
+    margin-bottom: 10px;
+    width: 320px;
+}
+
+#index-field {
+    width: 30px;
+}
+
+#action-container {
+    flex-direction: row;
+    margin-bottom: 10px;
+    width: 320px;
+}
+
+#grid-container {
+    width: 320px;
+}
+
+Button {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-width: 0;
+}
+
+Button:hover {
+    background-color: rgb(77, 77, 77);
+}

@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc3a7fad003f41b9ac029425b4d01382, type: 3}
+  m_Name: SpinSettings
+  m_EditorClassIdentifier: 
+  costToSpin: 10
+  rewards:
+  - resource: {fileID: 11400000, guid: 05af233fe9cfa409abb37d57d2cceaea, type: 2}
+    rewardVisualPrefab: {fileID: 6082623472529075455, guid: b9dbadfa60b574160899fdcb4d29d050, type: 3}
+    count: 1
+    rewardPopupPrefab: {fileID: 7923912664405912253, guid: 8e4d86e3092bb4f3b8b1a9a24ecbc4cf, type: 3}
+  - resource: {fileID: 11400000, guid: 05af233fe9cfa409abb37d57d2cceaea, type: 2}
+    rewardVisualPrefab: {fileID: 6082623472529075455, guid: b9dbadfa60b574160899fdcb4d29d050, type: 3}
+    count: 20
+    rewardPopupPrefab: {fileID: 7923912664405912253, guid: 8e4d86e3092bb4f3b8b1a9a24ecbc4cf, type: 3}
+  - resource: {fileID: 11400000, guid: 05af233fe9cfa409abb37d57d2cceaea, type: 2}
+    rewardVisualPrefab: {fileID: 6082623472529075455, guid: b9dbadfa60b574160899fdcb4d29d050, type: 3}
+    count: 2
+    rewardPopupPrefab: {fileID: 7923912664405912253, guid: 8e4d86e3092bb4f3b8b1a9a24ecbc4cf, type: 3}
+  - resource: {fileID: 11400000, guid: 05af233fe9cfa409abb37d57d2cceaea, type: 2}
+    rewardVisualPrefab: {fileID: 6082623472529075455, guid: b9dbadfa60b574160899fdcb4d29d050, type: 3}
+    count: 3
+    rewardPopupPrefab: {fileID: 7923912664405912253, guid: 8e4d86e3092bb4f3b8b1a9a24ecbc4cf, type: 3}
+  - resource: {fileID: 11400000, guid: 05af233fe9cfa409abb37d57d2cceaea, type: 2}
+    rewardVisualPrefab: {fileID: 6082623472529075455, guid: b9dbadfa60b574160899fdcb4d29d050, type: 3}
+    count: 10
+    rewardPopupPrefab: {fileID: 7923912664405912253, guid: 8e4d86e3092bb4f3b8b1a9a24ecbc4cf, type: 3}
+  - resource: {fileID: 11400000, guid: 05af233fe9cfa409abb37d57d2cceaea, type: 2}
+    rewardVisualPrefab: {fileID: 6082623472529075455, guid: b9dbadfa60b574160899fdcb4d29d050, type: 3}
+    count: 6
+    rewardPopupPrefab: {fileID: 7923912664405912253, guid: 8e4d86e3092bb4f3b8b1a9a24ecbc4cf, type: 3}

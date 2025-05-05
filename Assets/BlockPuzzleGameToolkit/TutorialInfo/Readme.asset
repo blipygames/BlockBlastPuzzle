@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
+  m_Name: Readme
+  m_EditorClassIdentifier: 
+  icon: {fileID: 2800000, guid: 2030544ccac714295b24b1ac7ae18aca, type: 3}
+  title: Block Puzzle Game Toolkit
+  sections:
+  - heading: Block Puzzle
+    text: 'Create amazing games effortlessly with Block Puzzle Game Toolkit. Unleash
+      your creativity and design captivating games using our extensive Asset Toolkit '
+    linkText: Description
+    url: https://candy-smith.gitbook.io/main
+  - heading: 
+    text: 'If you have any issue or a question, please, contact us here:'
+    linkText: 
+    url: 
+  - heading: 
+    text: 
+    linkText: info@candy-smith.com
+    url: info@candy-smith.com
+  - heading: 
+    text: 
+    linkText: discord
+    url: https://discord.gg/B4cakyg
+  loadedLayout: 1

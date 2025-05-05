@@ -4,5 +4,9 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
-  m_configObjects: {}
+  m_Scenes:
+  - enabled: 1
+    path: Assets/BlockPuzzleGameToolkit/Scenes/main.unity
+    guid: 88c9f51e8542e47d28fa27d5846353d5
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: eb38d7ad7254d493fb82efdc68718f8f, type: 2}

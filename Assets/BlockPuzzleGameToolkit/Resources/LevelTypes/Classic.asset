@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e0a7b181df4ac392d6eab85851bb80, type: 3}
+  m_Name: Classic
+  m_EditorClassIdentifier: 
+  elevelType: 2
+  targets:
+  - {fileID: 11400000, guid: a101d12b2edd14116a6ec86daa24704b, type: 2}
+  prePlayPopup: {fileID: 0}
+  preFailedPopup: {fileID: 0}
+  failedPopup: {fileID: 9018703703823889394, guid: 983b150f53a76437a99ed0a32525b82d, type: 3}
+  preWinPopup: {fileID: 0}
+  winPopup: {fileID: 0}
+  selectable: 0
+  singleColorMode: 0
+  stateHandler: {fileID: 11400000, guid: 07001988d60a0487d9f7f8e9ebcd3c1e, type: 2}

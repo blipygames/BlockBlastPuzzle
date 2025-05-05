@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e2782dbed2b4978a4534cef73e33839, type: 3}
+  m_Name: MapItemTemplate 1
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 8863438563086167043, guid: a53bd7608db81488c9baddc2c2f7d7d4, type: 3}
+  backgroundColor: {r: 0.12156863, g: 0.13333334, b: 0.21568628, a: 1}
+  underlayColor: {r: 0.12156863, g: 0.13333334, b: 0.21568628, a: 1}
+  bottomColor: {r: 0, g: 0.7529412, b: 1, a: 1}
+  topColor: {r: 0.88235295, g: 1, b: 1, a: 1}
+  leftColor: {r: 0, g: 0.8627451, b: 1, a: 1}
+  rightColor: {r: 0.16078432, g: 0.91764706, b: 1, a: 1}
+  overlayColor: {r: 0, g: 1, b: 1, a: 1}

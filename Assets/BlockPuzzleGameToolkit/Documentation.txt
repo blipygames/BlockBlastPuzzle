@@ -1,0 +1,8 @@
+﻿Block Puzzle Game Toolkit
+
+Documentation you can find here https://candy-smith.gitbook.io/main
+
+If you have a question please contact us here:
+
+    info@candy-smith.com
+    https://discord.gg/B4cakyg

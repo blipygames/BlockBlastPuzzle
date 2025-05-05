@@ -1,0 +1,181 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 417adac05521446ba62d9ce36bf3b4c1, type: 3}
+  m_Name: AdsSettings
+  m_EditorClassIdentifier: 
+  adProfiles:
+  - name: Unity ads iOS
+    enable: 0
+    testInEditor: 1
+    platforms: 1
+    appId: 5698950
+    adsHandler: {fileID: 11400000, guid: 60c77287bd6d042938fbd15e5462e051, type: 2}
+    adElements:
+    - placementId: Interstitial_iOS
+      adReference: {fileID: 11400000, guid: f9303f4b583464bc08f45f673b581f90, type: 2}
+      popup:
+        popup: {fileID: 4016055804716088334, guid: 42fecf35a1e774a20a5f0e45c3d3c10e, type: 3}
+        showOnOpen: 1
+        showOnClose: 0
+    - placementId: Rewarded_iOS
+      adReference: {fileID: 11400000, guid: c831bd9c00a134b8db57a0d96d34a238, type: 2}
+      popup:
+        popup: {fileID: 0}
+        showOnOpen: 0
+        showOnClose: 0
+  - name: Unity ads  Android
+    enable: 0
+    testInEditor: 1
+    platforms: 0
+    appId: 5698951
+    adsHandler: {fileID: 11400000, guid: 60c77287bd6d042938fbd15e5462e051, type: 2}
+    adElements:
+    - placementId: Interstitial_Android
+      adReference: {fileID: 11400000, guid: f9303f4b583464bc08f45f673b581f90, type: 2}
+      popup:
+        popup: {fileID: 1194946714372672274, guid: 0845287dd41884c6087d82d3bc15ce85, type: 3}
+        showOnOpen: 1
+        showOnClose: 0
+    - placementId: Rewarded_Android
+      adReference: {fileID: 11400000, guid: c831bd9c00a134b8db57a0d96d34a238, type: 2}
+      popup:
+        popup: {fileID: 0}
+        showOnOpen: 0
+        showOnClose: 0
+  - name: Unity ads banner android
+    enable: 0
+    testInEditor: 1
+    platforms: 0
+    appId: 5698951
+    adsHandler: {fileID: 11400000, guid: 74706189f5004431584663da028f09e5, type: 2}
+    adElements:
+    - placementId: Banner_Android
+      adReference: {fileID: 11400000, guid: 4396e62ba27584ef79ac362c4948ee63, type: 2}
+      popup:
+        popup: {fileID: 0}
+        showOnOpen: 0
+        showOnClose: 0
+  - name: Unity ads banner ios
+    enable: 0
+    testInEditor: 1
+    platforms: 1
+    appId: 5698950
+    adsHandler: {fileID: 11400000, guid: 60c77287bd6d042938fbd15e5462e051, type: 2}
+    adElements:
+    - placementId: Banner_iOS
+      adReference: {fileID: 11400000, guid: 4396e62ba27584ef79ac362c4948ee63, type: 2}
+      popup:
+        popup: {fileID: 0}
+        showOnOpen: 0
+        showOnClose: 0
+  - name: ironSource  iOS
+    enable: 0
+    testInEditor: 0
+    platforms: 1
+    appId: 19fbf03c5
+    adsHandler: {fileID: 11400000, guid: 4d75985c87e4d4a06aeb409e363ab577, type: 2}
+    adElements:
+    - placementId: 19298235
+      adReference: {fileID: 11400000, guid: c831bd9c00a134b8db57a0d96d34a238, type: 2}
+      popup:
+        popup: {fileID: 0}
+        showOnOpen: 0
+        showOnClose: 0
+    - placementId: 19298237
+      adReference: {fileID: 11400000, guid: f9303f4b583464bc08f45f673b581f90, type: 2}
+      popup:
+        popup: {fileID: 4016055804716088334, guid: 42fecf35a1e774a20a5f0e45c3d3c10e, type: 3}
+        showOnOpen: 1
+        showOnClose: 0
+  - name: ironSource  Android
+    enable: 0
+    testInEditor: 0
+    platforms: 0
+    appId: 1dc5839f5
+    adsHandler: {fileID: 11400000, guid: 4d75985c87e4d4a06aeb409e363ab577, type: 2}
+    adElements:
+    - placementId: 19328063
+      adReference: {fileID: 11400000, guid: f9303f4b583464bc08f45f673b581f90, type: 2}
+      popup:
+        popup: {fileID: 4016055804716088334, guid: 42fecf35a1e774a20a5f0e45c3d3c10e, type: 3}
+        showOnOpen: 1
+        showOnClose: 0
+    - placementId: 19328061
+      adReference: {fileID: 11400000, guid: c831bd9c00a134b8db57a0d96d34a238, type: 2}
+      popup:
+        popup: {fileID: 0}
+        showOnOpen: 0
+        showOnClose: 0
+  - name: admob  iOS
+    enable: 0
+    testInEditor: 1
+    platforms: 1
+    appId: ca-app-pub-1921802893067184~3779034969
+    adsHandler: {fileID: 11400000, guid: 266d29f9977384adb88786f8b31ea502, type: 2}
+    adElements:
+    - placementId: ca-app-pub-1921802893067184/3595211877
+      adReference: {fileID: 11400000, guid: f9303f4b583464bc08f45f673b581f90, type: 2}
+      popup:
+        popup: {fileID: 4016055804716088334, guid: 42fecf35a1e774a20a5f0e45c3d3c10e, type: 3}
+        showOnOpen: 1
+        showOnClose: 0
+    - placementId: ca-app-pub-1921802893067184/7418897071
+      adReference: {fileID: 11400000, guid: c831bd9c00a134b8db57a0d96d34a238, type: 2}
+      popup:
+        popup: {fileID: 0}
+        showOnOpen: 0
+        showOnClose: 0
+  - name: admob  Android
+    enable: 0
+    testInEditor: 1
+    platforms: 0
+    appId: ca-app-pub-1921802893067184~8049698250
+    adsHandler: {fileID: 11400000, guid: 266d29f9977384adb88786f8b31ea502, type: 2}
+    adElements:
+    - placementId: ca-app-pub-1921802893067184/5742264961
+      adReference: {fileID: 11400000, guid: f9303f4b583464bc08f45f673b581f90, type: 2}
+      popup:
+        popup: {fileID: 4016055804716088334, guid: 42fecf35a1e774a20a5f0e45c3d3c10e, type: 3}
+        showOnOpen: 1
+        showOnClose: 0
+    - placementId: ca-app-pub-1921802893067184/5468632912
+      adReference: {fileID: 11400000, guid: c831bd9c00a134b8db57a0d96d34a238, type: 2}
+      popup:
+        popup: {fileID: 0}
+        showOnOpen: 0
+        showOnClose: 0
+  - name: Admob banner IOS
+    enable: 0
+    testInEditor: 1
+    platforms: 1
+    appId: ca-app-pub-1921802893067184~3779034969
+    adsHandler: {fileID: 11400000, guid: 2115921dfa5e14398a54b0ad2a801cec, type: 2}
+    adElements:
+    - placementId: ca-app-pub-1921802893067184/2465953296
+      adReference: {fileID: 11400000, guid: 4396e62ba27584ef79ac362c4948ee63, type: 2}
+      popup:
+        popup: {fileID: 0}
+        showOnOpen: 0
+        showOnClose: 0
+  - name: Admob banner android
+    enable: 0
+    testInEditor: 1
+    platforms: 0
+    appId: ca-app-pub-1921802893067184~8049698250
+    adsHandler: {fileID: 11400000, guid: 2115921dfa5e14398a54b0ad2a801cec, type: 2}
+    adElements:
+    - placementId: ca-app-pub-1921802893067184/7055346637
+      adReference: {fileID: 11400000, guid: 4396e62ba27584ef79ac362c4948ee63, type: 2}
+      popup:
+        popup: {fileID: 0}
+        showOnOpen: 0
+        showOnClose: 0
