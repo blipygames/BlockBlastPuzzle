@@ -27,6 +27,6 @@ MonoBehaviour:
   ResetComboAfterMoves: 3
   continuePrice: 15
   failedTimerStart: 5
-  mapType: 1
+  mapType: 2
   maxLevelsInRow: 8
   maxRows: 8

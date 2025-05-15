@@ -77,11 +77,18 @@ namespace BlockPuzzleGameToolkit.Scripts.Map.ScrollableMap
             numberLabel.color = isCurrent ? currentTextColor : normalTextColor;
         }
 
-        public void MouseDown()
+        public void MouseDownScrollableMap()
         {
             if (isLocked)
                 return;
             ScrollableMapManager.instance.OpenLevel(number);
+        }
+
+        public void MouseDownGridMap()
+        {
+            if (isLocked)
+                return;
+            GridMapManager.instance.OpenLevel(number);
         }
     }
 }

@@ -15,6 +15,7 @@ namespace BlockPuzzleGameToolkit.Scripts.Enums
     public enum EMapType
     {
         Tiled,
-        Scrollable
+        Scrollable,
+        Grid
     }
 }

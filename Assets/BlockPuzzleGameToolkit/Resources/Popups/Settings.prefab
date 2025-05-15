@@ -1707,7 +1707,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fade: 1
+  fadeInDuration: 0.1
+  appearanceDelay: 0.01
   closeButton: {fileID: 5597346727985472784}
+  instantClose: 0
   back: {fileID: 2587868448132501155}
   privacypolicy: {fileID: 9102471955984009255}
   shop: {fileID: 4685318622773488487}
@@ -3146,6 +3149,10 @@ PrefabInstance:
     - target: {fileID: 8201212475682522876, guid: 4a90a7a36be6c3249a0612ab1316c8fc, type: 3}
       propertyPath: m_Name
       value: Shop-button
+      objectReference: {fileID: 0}
+    - target: {fileID: 8201212475682522876, guid: 4a90a7a36be6c3249a0612ab1316c8fc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9157385146011294632, guid: 4a90a7a36be6c3249a0612ab1316c8fc, type: 3}
       propertyPath: m_Name

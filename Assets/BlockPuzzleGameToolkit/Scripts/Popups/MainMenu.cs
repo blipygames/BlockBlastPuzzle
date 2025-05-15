@@ -37,7 +37,7 @@ namespace BlockPuzzleGameToolkit.Scripts.Popups
 
         public Action OnAnimationEnded;
 
-        private const string LastFreeSpinTimeKey = "LastFreeSpinTime";
+        //private const string LastFreeSpinTimeKey = "LastFreeSpinTime";
 
         private void Start()
         {
@@ -45,31 +45,32 @@ namespace BlockPuzzleGameToolkit.Scripts.Popups
             classicMode.onClick.AddListener(PlayClassicMode);
             adventureMode.onClick.AddListener(PlayAdventureMode);
             settingsButton.onClick.AddListener(SettingsButtonClicked);
-            luckySpin.onClick.AddListener(LuckySpinButtonClicked);
-            UpdateFreeSpinMarker();
+            //luckySpin.onClick.AddListener(LuckySpinButtonClicked);
+            //UpdateFreeSpinMarker();
             GameDataManager.LevelNum = PlayerPrefs.GetInt("Level", 1);
             var levelsCount = Resources.LoadAll<Level>("Levels").Length;
-            luckySpin.gameObject.SetActive(GameManager.instance.GameSettings.enableLuckySpin);
+            //luckySpin.gameObject.SetActive(GameManager.instance.GameSettings.enableLuckySpin);
             if(!GameManager.instance.GameSettings.enableTimedMode)
                 timedMode.gameObject.SetActive(false);
         }
-        private bool CanUseFreeSpinToday()
-        {
-            if (!PlayerPrefs.HasKey(LastFreeSpinTimeKey))
-            {
-                return true;
-            }
+        
+        //private bool CanUseFreeSpinToday()
+        //{
+        //    if (!PlayerPrefs.HasKey(LastFreeSpinTimeKey))
+        //    {
+        //        return true;
+        //    }
 
-            var lastFreeSpinTimeStr = PlayerPrefs.GetString(LastFreeSpinTimeKey);
-            var lastFreeSpinTime = DateTime.Parse(lastFreeSpinTimeStr);
-            return DateTime.Now.Date > lastFreeSpinTime.Date;
-        }
+        //    var lastFreeSpinTimeStr = PlayerPrefs.GetString(LastFreeSpinTimeKey);
+        //    var lastFreeSpinTime = DateTime.Parse(lastFreeSpinTimeStr);
+        //    return DateTime.Now.Date > lastFreeSpinTime.Date;
+        //}
 
-        private void UpdateFreeSpinMarker()
-        {
-            var isFreeSpinAvailable = CanUseFreeSpinToday();
-            freeSpinMarker.SetActive(isFreeSpinAvailable);
-        }
+        //private void UpdateFreeSpinMarker()
+        //{
+        //    var isFreeSpinAvailable = CanUseFreeSpinToday();
+        //    freeSpinMarker.SetActive(isFreeSpinAvailable);
+        //}
 
         private void PlayClassicMode()
         {
@@ -94,10 +95,10 @@ namespace BlockPuzzleGameToolkit.Scripts.Popups
             MenuManager.instance.ShowPopup<Settings>();
         }
 
-        private void LuckySpinButtonClicked()
-        {
-            MenuManager.instance.ShowPopup<LuckySpin>(null, _ => UpdateFreeSpinMarker());
-        }
+        //private void LuckySpinButtonClicked()
+        //{
+        //    MenuManager.instance.ShowPopup<LuckySpin>(null, _ => UpdateFreeSpinMarker());
+        //}
 
         public void OnAnimationEnd(){
             OnAnimationEnded?.Invoke();

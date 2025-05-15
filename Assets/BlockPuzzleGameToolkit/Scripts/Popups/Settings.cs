@@ -94,7 +94,7 @@ namespace BlockPuzzleGameToolkit.Scripts.Popups
 
             back.onClick.AddListener(BackToMain);
             privacypolicy.onClick.AddListener(PrivacyPolicy);
-            shop.onClick.AddListener(Shop);
+            //shop.onClick.AddListener(Shop);
             retryButton.onClick.AddListener(Retry);
 
             // Load the saved vibration level
@@ -107,7 +107,7 @@ namespace BlockPuzzleGameToolkit.Scripts.Popups
             closeButton.onClick.AddListener(BackToGame);
             restorePurchase.onClick.AddListener(RestorePurchase);
             restorePurchase.gameObject.SetActive(GameManager.instance.GameSettings.enableInApps);
-            shop.gameObject.SetActive(GameManager.instance.GameSettings.enableInApps);
+            //shop.gameObject.SetActive(GameManager.instance.GameSettings.enableInApps);
         }
 
         private void RestorePurchase()
