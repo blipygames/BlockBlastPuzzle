@@ -888,7 +888,7 @@ PlayerSettings:
   cloudProjectId: 85f3aa72-985d-4050-955e-2ace40a40c84
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: BlockPuzzleGameToolkit
+  projectName: BlockBlastPuzzle
   organizationId: blipygames
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0

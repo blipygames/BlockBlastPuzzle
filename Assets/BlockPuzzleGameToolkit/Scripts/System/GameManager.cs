@@ -64,13 +64,13 @@ namespace BlockPuzzleGameToolkit.Scripts.System
         private void OnEnable()
         {
             IAPManager.SubscribeToPurchaseEvent(PurchaseSucceeded);
-            //if (StateManager.instance.CurrentState == EScreenStates.MainMenu)
-            //{
-            //    if (!GameDataManager.isTestPlay && CheckDailyBonusConditions())
-            //    {
-            //        blockButtons = true;
-            //    }
-            //}
+            if (StateManager.instance.CurrentState == EScreenStates.MainMenu)
+            {
+                if (!GameDataManager.isTestPlay && CheckDailyBonusConditions())
+                {
+                    blockButtons = true;
+                }
+            }
 
             if (!IsTutorialShown() && !GameDataManager.isTestPlay)
             {
@@ -136,30 +136,30 @@ namespace BlockPuzzleGameToolkit.Scripts.System
             Debug.LogError($"Failed to initialize gaming services: {errorMessage}");
         }
 
-        //private void HandleDailyBonus()
-        //{
-        //    if (StateManager.instance.CurrentState != EScreenStates.MainMenu || !dailyBonusSettings.dailyBonusEnabled || !GameSettings.enableInApps)
-        //    {
-        //        return;
-        //    }
+        private void HandleDailyBonus()
+        {
+            if (StateManager.instance.CurrentState != EScreenStates.MainMenu || !dailyBonusSettings.dailyBonusEnabled || !GameSettings.enableInApps)
+            {
+                return;
+            }
 
-        //    var shouldShowDailyBonus = CheckDailyBonusConditions();
+            var shouldShowDailyBonus = CheckDailyBonusConditions();
 
-        //    if (shouldShowDailyBonus)
-        //    {
-        //        var daily = MenuManager.instance.ShowPopup<DailyBonus>(()=>
-        //        {
-        //            blockButtons = false;
-        //        });
-        //    }
-        //}
+            if (shouldShowDailyBonus)
+            {
+                var daily = MenuManager.instance.ShowPopup<DailyBonus>(() =>
+                {
+                    blockButtons = false;
+                });
+            }
+        }
 
-        //private bool CheckDailyBonusConditions()
-        //{
-        //    var today = DateTime.Today;
-        //    var lastRewardDate = DateTime.Parse(PlayerPrefs.GetString("DailyBonusDay", today.Subtract(TimeSpan.FromDays(1)).ToString(CultureInfo.CurrentCulture)));
-        //    return today.Date > lastRewardDate.Date && dailyBonusSettings.dailyBonusEnabled;
-        //}
+        private bool CheckDailyBonusConditions()
+        {
+            var today = DateTime.Today;
+            var lastRewardDate = DateTime.Parse(PlayerPrefs.GetString("DailyBonusDay", today.Subtract(TimeSpan.FromDays(1)).ToString(CultureInfo.CurrentCulture)));
+            return today.Date > lastRewardDate.Date && dailyBonusSettings.dailyBonusEnabled;
+        }
 
         public void RestartLevel()
         {
@@ -275,7 +275,7 @@ namespace BlockPuzzleGameToolkit.Scripts.System
         {
             if (StateManager.instance.CurrentState == EScreenStates.MainMenu)
             {
-                //HandleDailyBonus();
+                HandleDailyBonus();
             }
         }
 

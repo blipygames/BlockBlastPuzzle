@@ -11,6 +11,7 @@ using System.Linq;
 public class GridMapManager : SingletonBehaviour<GridMapManager>
 {
     private List<LevelPin> openedLevels = new List<LevelPin>();
+    private List<LevelPin> allLevels = new List<LevelPin>();
 
     [SerializeField] 
     private CustomButton backButton;
@@ -23,6 +24,11 @@ public class GridMapManager : SingletonBehaviour<GridMapManager>
 
     [SerializeField]
     public LevelPin levelPrefab;
+
+    private void OnEnable()
+    {
+        UpdateLevels();
+    }
 
     private void Start()
     {
@@ -47,6 +53,8 @@ public class GridMapManager : SingletonBehaviour<GridMapManager>
             newPin.name = $"Level_{newLevelNumber}";
             newPin.SetNumber(newLevelNumber);
 
+            allLevels.Add(newPin);
+
             // Set lock state based on current progress
             if (newLevelNumber > lastLevel)
             {
@@ -67,6 +75,28 @@ public class GridMapManager : SingletonBehaviour<GridMapManager>
 
         Canvas.ForceUpdateCanvases();
         LayoutRebuilder.ForceRebuildLayoutImmediate(levelsGrid.GetComponent<RectTransform>());
+    }
+
+    private void UpdateLevels()
+    {
+        int lastLevel = GameDataManager.GetLevelNum();
+
+        for (int i = 0; i < allLevels.Count; i++)
+        {
+            // Set lock state based on current progress
+            if (allLevels[i].number <= lastLevel)
+            {
+                if (allLevels[i].IsLocked)
+                {
+                    allLevels[i].UnLock();
+                    if (!openedLevels.Contains(allLevels[i]))
+                    {
+                        openedLevels.Add(allLevels[i]);
+                    }
+                }
+                allLevels[i].SetCurrent(allLevels[i].number == lastLevel);
+            }
+        }
     }
 
     private Vector3 GetPositionOpenedLevel()

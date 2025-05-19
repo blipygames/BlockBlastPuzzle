@@ -96,16 +96,24 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
         public override void OnScored(int scoreToAdd)
         {
             base.OnScored(scoreToAdd);
-            // AddBonusTime(scoreToAdd);
+            AddBonusTime(scoreToAdd);
         }
 
         private void AddBonusTime(int scoreValue)
         {
-            // Add 1 second for every 10 points scored
-            float bonusTime = scoreValue / 10f;
+            // Add 10 second for every 10 points scored
+            float bonusTime = scoreValue;
             float currentTime = TimerManager.RemainingTime;
             TimerManager.InitializeTimer(Mathf.Min(currentTime + bonusTime, gameDuration));
         }
+
+        //private void AddBonusTime(int scoreValue)
+        //{
+        //    // Add 1 second for every 10 points scored
+        //    float bonusTime = scoreValue / 10f;
+        //    float currentTime = TimerManager.RemainingTime;
+        //    TimerManager.InitializeTimer(Mathf.Min(currentTime + bonusTime, gameDuration));
+        //}
 
         public override void OnLose()
         {

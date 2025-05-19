@@ -36,6 +36,8 @@ namespace BlockPuzzleGameToolkit.Scripts.Map.ScrollableMap
         private Color currentTextColor = Color.yellow;
         private bool isLocked;
 
+        public bool IsLocked => isLocked;
+
         private void OnValidate()
         {
             number = transform.GetSiblingIndex() + 1;
