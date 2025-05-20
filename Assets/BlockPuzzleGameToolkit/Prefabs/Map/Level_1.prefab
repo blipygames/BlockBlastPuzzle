@@ -436,9 +436,10 @@ MonoBehaviour:
   lockObj: {fileID: 6801505688431754226}
   openedObj: {fileID: 6801505688722478495}
   currentObj: {fileID: 7652873159430637083}
-  numberLabel: {fileID: 6801505689082050273}
+  numberLabels: []
   normalTextColor: {r: 0, g: 0.37254903, b: 0.7176471, a: 1}
   currentTextColor: {r: 0.6, g: 0.29803923, b: 0, a: 1}
+  lockTextColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!95 &105794096486839212
 Animator:
   serializedVersion: 5

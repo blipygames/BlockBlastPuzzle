@@ -11,6 +11,7 @@
 // // THE SOFTWARE.
 
 using BlockPuzzleGameToolkit.Scripts.LevelsData;
+using System.Xml;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -29,11 +30,14 @@ namespace BlockPuzzleGameToolkit.Scripts.Map.ScrollableMap
         private GameObject currentObj;
 
         [SerializeField]
-        private TextMeshProUGUI numberLabel;
+        private TextMeshProUGUI[] numberLabels;
         [SerializeField] 
-        private Color normalTextColor = Color.white;
+        private Color normalTextColor;
         [SerializeField]
-        private Color currentTextColor = Color.yellow;
+        private Color currentTextColor;
+        [SerializeField]
+        private Color lockTextColor;
+
         private bool isLocked;
 
         public bool IsLocked => isLocked;
@@ -42,19 +46,30 @@ namespace BlockPuzzleGameToolkit.Scripts.Map.ScrollableMap
         {
             number = transform.GetSiblingIndex() + 1;
             name = "Level_" + number;
-            numberLabel.text = number.ToString();
+
+            foreach (var numberLabel in numberLabels)
+            {
+                numberLabel.text = number.ToString();
+            }
         }
 
         public void SetNumber(int number)
         {
             this.number = number;
-            numberLabel.text = number.ToString();
+            foreach (var numberLabel in numberLabels)
+            {
+                numberLabel.text = number.ToString();
+            }
         }
 
         public void Lock()
         {
             isLocked = true;
-            numberLabel.color = normalTextColor;
+            foreach (var numberLabel in numberLabels)
+            {
+                numberLabel.outlineWidth = 0.0f;
+                numberLabel.outlineColor = lockTextColor;
+            }
             lockObj.SetActive(true);
             openedObj.SetActive(false);
             currentObj.SetActive(false);
@@ -63,20 +78,31 @@ namespace BlockPuzzleGameToolkit.Scripts.Map.ScrollableMap
         public void UnLock()
         {
             isLocked = false;
-            numberLabel.color = normalTextColor;
-            numberLabel.gameObject.SetActive(true);
+            
+            foreach (var numberLabel in numberLabels)
+            {
+                numberLabel.outlineWidth = 0.2f;
+                numberLabel.outlineColor = normalTextColor;
+                numberLabel.gameObject.SetActive(true);
+            }
+
             lockObj.SetActive(false);
             openedObj.SetActive(true);
             currentObj.SetActive(false);
         }
-        
+
         public void SetCurrent(bool isCurrent)
         {
             if (isLocked)
                 return;
-                
+
             currentObj.SetActive(isCurrent);
-            numberLabel.color = isCurrent ? currentTextColor : normalTextColor;
+
+            foreach (var numberLabel in numberLabels)
+            {
+                numberLabel.outlineWidth = 0.2f;
+                numberLabel.outlineColor = isCurrent ? currentTextColor : normalTextColor;
+            }
         }
 
         public void MouseDownScrollableMap()
