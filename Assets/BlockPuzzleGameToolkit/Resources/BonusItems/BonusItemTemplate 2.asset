@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: BonusItemTemplate 2
   m_EditorClassIdentifier: 
   prefab: {fileID: -5885164791484336147, guid: 0149407e18629409fbb4b2b0c362519d, type: 3}
+  background: {fileID: 21300000, guid: 49114e4269dd0544fac764b1366a7c97, type: 3}
   sprite: {fileID: 21300000, guid: fa03e2f9e59b04bdbbabbac09927f77d, type: 3}

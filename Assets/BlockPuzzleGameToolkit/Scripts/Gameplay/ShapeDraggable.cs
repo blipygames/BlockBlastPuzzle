@@ -248,7 +248,7 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
             }
 
             var cellSize = field.GetCellSize();
-            var shapeOriginalWidth = 126f;
+            var shapeOriginalWidth = 102f;
             var scaleFactor = cellSize / shapeOriginalWidth;
 
             transform.localScale = new Vector3(scaleFactor, scaleFactor, 1);
@@ -327,7 +327,7 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
             {
                 var cell = GetCellUnderShape(item);
                 var cellComponent = cell?.GetComponent<Cell>();
-                return cell == null || !cellComponent.IsEmpty() || cellComponent.IsDestroying();
+                return cellComponent == null || !cellComponent.IsEmpty() || cellComponent.IsDestroying();
             });
         }
 
@@ -357,6 +357,7 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
         private Transform GetCellUnderShape(Item item)
         {
             var hit = Physics2D.Raycast(item.transform.position, Vector2.zero, 1);
+
             return hit.collider != null && hit.collider.CompareTag("Cell") ? hit.collider.transform : null;
         }
     }

@@ -305,14 +305,14 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
 
         public void ShowOutline(bool show)
         {
-            var paddingX = 0.033f;
-            var paddingY = 0.033f;
+            //var paddingX = 0.033f;
+            //var paddingY = 0.033f;
 
-            outline.anchoredPosition = field.anchoredPosition;
-            outline.sizeDelta = field.sizeDelta;
-            outline.anchorMin = new Vector2(field.anchorMin.x - paddingX, field.anchorMin.y - paddingY);
-            outline.anchorMax = new Vector2(field.anchorMax.x + paddingX, field.anchorMax.y + paddingY);
-            outline.pivot = field.pivot;
+            //outline.anchoredPosition = field.anchoredPosition;
+            //outline.sizeDelta = field.sizeDelta;
+            //outline.anchorMin = new Vector2(field.anchorMin.x - paddingX, field.anchorMin.y - paddingY);
+            //outline.anchorMax = new Vector2(field.anchorMax.x + paddingX, field.anchorMax.y + paddingY);
+            //outline.pivot = field.pivot;
             outline.gameObject.SetActive(show);
         }
 

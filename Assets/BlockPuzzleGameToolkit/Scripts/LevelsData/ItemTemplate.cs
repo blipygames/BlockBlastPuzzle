@@ -20,6 +20,8 @@ namespace BlockPuzzleGameToolkit.Scripts.LevelsData
     {
         public Color backgroundColor;
         public Color underlayColor;
+        public Color intersectColor;
+        public Color strokeColor;
         public Color bottomColor;
         public Color topColor;
         public Color leftColor;

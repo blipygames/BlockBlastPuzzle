@@ -17,6 +17,7 @@ namespace BlockPuzzleGameToolkit.Scripts.LevelsData
     [CreateAssetMenu(fileName = "BonusItemTemplate", menuName = "BlockPuzzleGameToolkit/Items/BonusItemTemplate", order = 1)]
     public class BonusItemTemplate : ScriptableData
     {
+        public Sprite background;
         public Sprite sprite;
     }
 }

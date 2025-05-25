@@ -27,7 +27,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3227594227160070252}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -61,7 +61,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.11372549, g: 0.16470589, b: 0.35686275, a: 1}
+  m_Color: {r: 0.11372549, g: 0.16470589, b: 0.35686275, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -121,7 +121,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 126, y: 126}
+  m_Size: {x: 128, y: 128}
   m_EdgeRadius: 0
 --- !u!114 &4160792602064436948
 MonoBehaviour:
@@ -197,7 +197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.05490196, g: 0.105882354, b: 0.26666668, a: 1}
+  m_Color: {r: 0.10980392, g: 0.10980392, b: 0.45882353, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -272,6 +272,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4914645637111030884, guid: 9732692a1bd4a4271b12a0ba65cdc4e0, type: 3}
       propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5643952815857593815, guid: 9732692a1bd4a4271b12a0ba65cdc4e0, type: 3}
+      propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7028852540942216117, guid: 9732692a1bd4a4271b12a0ba65cdc4e0, type: 3}

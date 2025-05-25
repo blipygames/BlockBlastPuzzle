@@ -23,6 +23,7 @@ namespace BlockPuzzleGameToolkit.Scripts.GUI
         public void FillElement(BonusItemTemplate bonusItemTemplate, int targetAmount)
         {
             bonus.FillIcon(bonusItemTemplate);
+            bonus.HideBackground();
             countText.text = targetAmount.ToString();
         }
 

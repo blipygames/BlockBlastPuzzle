@@ -17,6 +17,8 @@ namespace BlockPuzzleGameToolkit.Scripts.LevelsData
 {
     public class Bonus : FillAndPreview
     {
+        private int _backgroundSide;
+        public Image background;
         public Image image;
 
         [HideInInspector]
@@ -32,9 +34,27 @@ namespace BlockPuzzleGameToolkit.Scripts.LevelsData
 
         private void UpdateColor(BonusItemTemplate bonusItemTemplate)
         {
+            _backgroundSide = _side + 5;
             this.bonusItemTemplate = bonusItemTemplate;
+
+            background.sprite = bonusItemTemplate.background;
+            background.SetNativeSize();
+
             image.sprite = bonusItemTemplate.sprite;
             image.SetNativeSize();
+
+            if (background.rectTransform.sizeDelta.x > _backgroundSide || background.rectTransform.sizeDelta.y > _backgroundSide)
+            {
+                if (background.rectTransform.sizeDelta.x > background.rectTransform.sizeDelta.y)
+                {
+                    background.rectTransform.sizeDelta = new Vector2(_backgroundSide, _backgroundSide * background.rectTransform.sizeDelta.y / background.rectTransform.sizeDelta.x);
+                }
+                else
+                {
+                    background.rectTransform.sizeDelta = new Vector2(_backgroundSide * background.rectTransform.sizeDelta.x / background.rectTransform.sizeDelta.y, _backgroundSide);
+                }
+            }
+
             if (image.rectTransform.sizeDelta.x > _side || image.rectTransform.sizeDelta.y > _side)
             {
                 if (image.rectTransform.sizeDelta.x > image.rectTransform.sizeDelta.y)
@@ -53,6 +73,15 @@ namespace BlockPuzzleGameToolkit.Scripts.LevelsData
             var color = image.color;
             color.a = alpha;
             image.color = color;
+
+            color = background.color;
+            color.a = alpha;
+            background.color = color;
+        }
+
+        public void HideBackground()
+        {
+            background.gameObject.SetActive(false);
         }
     }
 }

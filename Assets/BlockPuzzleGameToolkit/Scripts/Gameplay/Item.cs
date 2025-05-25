@@ -22,11 +22,12 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
         public ItemTemplate itemTemplate;
         public Image backgroundColor;
         public Image underlayColor;
+        public Image intersectColor;
+        public Image strokeColor;
         public Image bottomColor;
         public Image topColor;
         public Image leftColor;
         public Image rightColor;
-        public Image overlayColor;
         private Vector2Int position;
         public Bonus bonus;
         public BonusItemTemplate bonusItemTemplate;
@@ -45,11 +46,12 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
             this.itemTemplate = itemTemplate;
             backgroundColor.color = itemTemplate.backgroundColor;
             underlayColor.color = itemTemplate.underlayColor;
+            intersectColor.color = itemTemplate.intersectColor;
+            strokeColor.color = itemTemplate.strokeColor;
             bottomColor.color = itemTemplate.bottomColor;
             topColor.color = itemTemplate.topColor;
             leftColor.color = itemTemplate.leftColor;
             rightColor.color = itemTemplate.rightColor;
-            overlayColor.color = itemTemplate.overlayColor;
         }
 
         public void SetBonus(BonusItemTemplate template)
@@ -95,6 +97,14 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
             color.a = alpha;
             underlayColor.color = color;
 
+            color = intersectColor.color;
+            color.a = alpha;
+            intersectColor.color = color;
+
+            color = strokeColor.color;
+            color.a = alpha;
+            strokeColor.color = color;
+
             color = bottomColor.color;
             color.a = alpha;
             bottomColor.color = color;
@@ -110,10 +120,6 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
             color = rightColor.color;
             color.a = alpha;
             rightColor.color = color;
-
-            color = overlayColor.color;
-            color.a = alpha;
-            overlayColor.color = color;
 
             bonus?.SetTransparency(alpha);
         }

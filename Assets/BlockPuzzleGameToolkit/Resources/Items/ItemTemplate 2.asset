@@ -14,10 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 8863438563086167043, guid: 9732692a1bd4a4271b12a0ba65cdc4e0, type: 3}
   backgroundColor: {r: 0.11372549, g: 0.16470589, b: 0.35686275, a: 1}
-  underlayColor: {r: 1, g: 1, b: 0.32941177, a: 1}
-  bottomColor: {r: 0.8117647, g: 0.5568628, b: 0.019607844, a: 1}
-  topColor: {r: 1, g: 0.99999994, b: 0.48584908, a: 1}
-  leftColor: {r: 0.9254902, g: 0.6666667, b: 0.12156863, a: 1}
-  rightColor: {r: 0.99215686, g: 0.94509804, b: 0.2901961, a: 1}
-  overlayColor: {r: 0.9647059, g: 0.81960785, b: 0.20392157, a: 1}
+  underlayColor: {r: 1, g: 0.9411765, b: 0.09803922, a: 1}
+  intersectColor: {r: 0.8901961, g: 0.8156863, b: 0.2, a: 1}
+  strokeColor: {r: 0.9843137, g: 0.9411765, b: 0.4117647, a: 1}
+  bottomColor: {r: 0.78431374, g: 0.6901961, b: 0.03529412, a: 1}
+  topColor: {r: 0.89411765, g: 0.8117647, b: 0.0627451, a: 1}
+  leftColor: {r: 0.9098039, g: 0.8235294, b: 0.0627451, a: 1}
+  rightColor: {r: 0.8235294, g: 0.72156864, b: 0.03137255, a: 1}
+  overlayColor: {r: 1, g: 0.9411765, b: 0.09803922, a: 1}
   customItemPrefab: {fileID: 0}
