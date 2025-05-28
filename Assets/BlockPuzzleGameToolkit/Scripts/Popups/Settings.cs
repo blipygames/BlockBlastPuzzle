@@ -23,21 +23,39 @@ namespace BlockPuzzleGameToolkit.Scripts.Popups
     public class Settings : PopupWithCurrencyLabel
     {
         [SerializeField]
+        private GameObject backPanel;
+
+        [SerializeField]
+        private GameObject retryPanel;
+        
+        [SerializeField]
+        private GameObject privacyPolicyPanel;
+
+        [SerializeField]
+        private GameObject restorePurchasePanel;
+
+        [SerializeField]
+        private GameObject quitPanel;
+
+        [SerializeField]
         private CustomButton back;
 
         // privacypolicy button
         [SerializeField]
-        private CustomButton privacypolicy;
+        private CustomButton privacyPolicy;
 
         //shop button
-        [SerializeField]
-        private CustomButton shop;
+        //[SerializeField]
+        //private CustomButton shop;
 
         [SerializeField]
-        private CustomButton retryButton;
+        private CustomButton retry;
 
         [SerializeField]
-        private Button restorePurchase;
+        private CustomButton restorePurchase;
+
+        [SerializeField]
+        private CustomButton quit;
 
         [SerializeField]
         private Slider vibrationSlider;
@@ -93,9 +111,10 @@ namespace BlockPuzzleGameToolkit.Scripts.Popups
             }
 
             back.onClick.AddListener(BackToMain);
-            privacypolicy.onClick.AddListener(PrivacyPolicy);
+            quit.onClick.AddListener(BackToMain);
+            privacyPolicy.onClick.AddListener(PrivacyPolicy);
             //shop.onClick.AddListener(Shop);
-            retryButton.onClick.AddListener(Retry);
+            retry.onClick.AddListener(Retry);
 
             // Load the saved vibration level
             LoadVibrationLevel();
@@ -108,15 +127,30 @@ namespace BlockPuzzleGameToolkit.Scripts.Popups
             restorePurchase.onClick.AddListener(RestorePurchase);
             restorePurchase.gameObject.SetActive(GameManager.instance.GameSettings.enableInApps);
             //shop.gameObject.SetActive(GameManager.instance.GameSettings.enableInApps);
+
+            if(StateManager.instance.CurrentState == EScreenStates.MainMenu)
+            {
+                backPanel.gameObject.SetActive(false);
+                retryPanel.gameObject.SetActive(false);
+                privacyPolicyPanel.gameObject.SetActive(true);
+                restorePurchasePanel.gameObject.SetActive(true);
+            }
+            else
+            {
+                backPanel.gameObject.SetActive(true);
+                retryPanel.gameObject.SetActive(true);
+                privacyPolicyPanel.gameObject.SetActive(false);
+                restorePurchasePanel.gameObject.SetActive(false);
+            }
         }
 
         private void RestorePurchase()
         {
-             GameManager.instance.RestorePurchases(((b, list) =>
-            {
-                if (b)
-                    Close();
-            }));
+            GameManager.instance.RestorePurchases(((b, list) =>
+           {
+               if (b)
+                   Close();
+           }));
         }
 
         private void BackToGame()
@@ -156,14 +190,14 @@ namespace BlockPuzzleGameToolkit.Scripts.Popups
             MenuManager.instance.FadeOut();
         }
 
-        private void Shop()
-        {
-            StopInteration();
+        //private void Shop()
+        //{
+        //    StopInteration();
 
-            DisablePause();
-            MenuManager.instance.ShowPopup<CoinsShop>();
-            Close();
-        }
+        //    DisablePause();
+        //    MenuManager.instance.ShowPopup<CoinsShop>();
+        //    Close();
+        //}
 
         private void PrivacyPolicy()
         {
