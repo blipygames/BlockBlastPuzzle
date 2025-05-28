@@ -5538,9 +5538,9 @@ Material:
     m_TexEnvs: []
     m_Ints: []
     m_Floats:
-    - _OutlineWidth: 0.6
+    - _OutlineWidth: 0
     m_Colors:
-    - _OutlineColor: {r: 0.12156863, g: 0.29803923, b: 0.68235296, a: 1}
+    - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
 --- !u!28 &3541608413657932961
 Texture2D:

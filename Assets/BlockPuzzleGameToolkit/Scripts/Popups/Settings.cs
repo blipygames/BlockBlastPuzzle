@@ -133,14 +133,14 @@ namespace BlockPuzzleGameToolkit.Scripts.Popups
                 backPanel.gameObject.SetActive(false);
                 retryPanel.gameObject.SetActive(false);
                 privacyPolicyPanel.gameObject.SetActive(true);
-                restorePurchasePanel.gameObject.SetActive(true);
+                quitPanel.gameObject.SetActive(true);
             }
             else
             {
                 backPanel.gameObject.SetActive(true);
                 retryPanel.gameObject.SetActive(true);
                 privacyPolicyPanel.gameObject.SetActive(false);
-                restorePurchasePanel.gameObject.SetActive(false);
+                quitPanel.gameObject.SetActive(false);
             }
         }
 

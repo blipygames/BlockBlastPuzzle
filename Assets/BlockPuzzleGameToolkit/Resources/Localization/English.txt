@@ -1,61 +1,63 @@
-COINSSHOP : Coins Shop
-FREE : FREE
-BUYTIPS : Buy Tips
-GETFREE : Get Free
-DAILYREWARD : Daily Rewards
-DAY : Day
-THANKS : Thanks!
-LOADING : Loading...
-LUCKYSPIN : <sprite index=0 color=#FE96CD>  LUCKY SPIN  <sprite index=0 color=#FE96CD>
-OK : OK
-YOURWIN : Your WIN!
-NOADSLABEL1 : Make this purchase to remove ads permanently
-NOADSLABEL2 : Reward videos are optional and available for viewing after purchase
-BUY : BUY
-OUTOFLIVES : OUT OF LIVES
-REFILLTHELIVES : Refill the lives?
-OUTOFTIME : OUT OF TIME
-REFILLTHETIME : Refill the time?
-GIFT : Gift
-LEVELCLEARED : LEVEL CLEARED!
-SETTINGS : Settings
-SHOP : SHOP
-PRIVACY : PRIVACY
-QUITTHEGAME : Quit the game
-DOYOUWANTTOQUIT : Do you really want to quit?
-YES : Yes
-NO : NO
-COMINGSOON : Reset the game to play again or wait for the next update
-YOUWIN : You WIN!
-NEXTLEVEL : Next Level
-SCORE : Score
-POINTS : Points
-REVIVEWITHNEWSHAPES : Continue with new shapes?
-WHATCHADS : Watch Ads
-CONTINUE : Continue
-YOULOSE : You Lose...
-RETRY : Retry
-ALMOST : Almost there...
-ARCADEMODE : ARCADE MODE
-STAGE : STAGE {stage}
-LEVEL : LEVEL {level}
-MOSTPOPULAR : Most Popular
-BESTOFFER : BEST Offer
-NOADS : NO ADS
-FREESPIN : FREE Spin
-SOUNDS : Sounds
-MUSIC : Music
-VIBRATION : Vibration
-GAMEOVER : Game Over
-YOURSCORE : Your Score
-BESTSCORE : BEST Score
-NEWRECORD : New Record!
-EXITGAME : Exit Game
-ADVENTURE : ARCADE
-CLASSIC : CLASSIC
-TUTORIAL : Tutorial
-RESTORE_PURCHASES : Restore Purchases
-TIMED : TIMED
-CONTINUEWITHEXTRASECONDS : EXTRA <color=yellow>+{continueTimerBonus}</color> sec
-YOUHAVETIMELEFT : You have <color=yellow>{timeLeft}</color> min left
-CONTINUEORLOSEPROGRESS : New shapes or lose progress?
+CoinsShop : Coins Shop
+Free : Free
+BuyTips : Buy Tips
+GetFree : Get Free
+DailyRewards : Daily Rewards
+Day : Day
+Thanks : Thanks!
+Loading : Loading...
+LuckySpin : <sprite index=0 color=#FE96CD>  Lucky Spin <sprite index=0 color=#FE96CD>
+Ok : Ok
+YourWin : Your Win!
+NoAdsLabel_1 : Make this purchase to remove ads permanently
+NoAdsLabel_2 : Reward videos are optional and available for viewing after purchase
+Buy : Buy
+OutOfLives : Out Of Lives
+RefillTheLives : Refill the lives?
+OutOfTime : Out Of Time
+RefillTheTime : Refill the time?
+Gift : Gift
+LevelCleared : Level Cleared!
+Settings : Settings
+Shop : Shop
+Privacy : Privacy
+QuitTheGame : Quit the game
+DoYouWantToQuit : Do you really want to quit?
+Yes : YES
+No : NO
+ComingSoon : Reset the game to play again or wait for the next update
+YouWin : You Win!
+NextLevel : Next Level
+Score : Score
+Points : Points
+ReviveWithNewShapes : Continue with new shapes?
+WatchAds : Watch Ads
+Continue : Continue
+YouLose : You Lose...
+Retry : Retry
+Almost : Almost there...
+ArcadeMode : Arcade Mode
+Stage : Stage {stage}
+Level : Level {level}
+MostPopular : Most Popular
+BestOffer : Best Offer
+NoAds : No Ads
+FreeSpin : Free Spin
+Sounds : Sounds
+Music : Music
+Vibration : Vibration
+GameOver : Game Over
+YourScore : Your Score
+BestScore : Best Score
+NewRecord : New Record!
+ExitGame : Exit Game
+Arcade : Arcade
+Classic : Classic
+Tutorial : Tutorial
+RestorePurchases : Restore Purchases
+Restore : Restore
+Purchases : Purchases
+Timed : Timed
+ContinueWithExtraSeconds : Extra <color=yellow>+{continueTimerBonus}</color> sec
+YouHaveTimeLeft : You have <color=yellow>{timeLeft}</color> min left
+ContinueOrLoseProgress : New shapes or lose progress?

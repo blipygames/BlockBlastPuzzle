@@ -1541,7 +1541,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: STAGE 1
+  m_text: Stage {stage}
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 14928a98ac0086a4483452d618f1764c, type: 2}
   m_sharedMaterial: {fileID: 3722732180671858053, guid: 14928a98ac0086a4483452d618f1764c, type: 2}
@@ -1610,7 +1610,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
-  instanceID: STAGE
+  instanceID: Stage
 --- !u!222 &173275119
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2256,8 +2256,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 02:55
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 14928a98ac0086a4483452d618f1764c, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: dcf94151cf5fb4593bb9b7e326eff2e7, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 835682cf48cd5ec4ea0e90d2f51c3002, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 8293c8bf0ae984947a3d8a8246996609, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2320,7 +2320,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &299128827
@@ -2878,7 +2878,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c2be3452af6ab4c6ea920adce6b4af72, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9b8ed3778b2fd6458e7b33a506bde05, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5081,16 +5081,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4641059037314894576, guid: e81bbbc218b73d345bfb5f45c5fa7c66, type: 3}
       propertyPath: m_text
-      value: LEVEL 14
+      value: Level
       objectReference: {fileID: 0}
     - target: {fileID: 4641059037314894576, guid: e81bbbc218b73d345bfb5f45c5fa7c66, type: 3}
       propertyPath: instanceID
-      value: LEVEL
+      value: Level
+      objectReference: {fileID: 0}
+    - target: {fileID: 4641059037314894576, guid: e81bbbc218b73d345bfb5f45c5fa7c66, type: 3}
+      propertyPath: m_fontSize
+      value: 64.85
       objectReference: {fileID: 0}
     - target: {fileID: 4641059037314894576, guid: e81bbbc218b73d345bfb5f45c5fa7c66, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 2100000, guid: 8d8936c9320ff401ebf82697670f3c0d, type: 2}
+      objectReference: {fileID: 1961388921338136372, guid: 835682cf48cd5ec4ea0e90d2f51c3002, type: 2}
     - target: {fileID: 4825982739004869547, guid: e81bbbc218b73d345bfb5f45c5fa7c66, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -10072,7 +10076,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1426601923
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13365,6 +13369,7 @@ MonoBehaviour:
   playObject: {fileID: 729030103}
   freeSpinMarker: {fileID: 80931283}
   background: {fileID: 0}
+  scoreText: {fileID: 281158591}
 --- !u!225 &1763200077
 CanvasGroup:
   m_ObjectHideFlags: 0

@@ -11,10 +11,12 @@
 // // THE SOFTWARE.
 
 using System;
+using BlockPuzzleGameToolkit.Scripts.Data;
 using BlockPuzzleGameToolkit.Scripts.Enums;
 using BlockPuzzleGameToolkit.Scripts.GUI;
 using BlockPuzzleGameToolkit.Scripts.LevelsData;
 using BlockPuzzleGameToolkit.Scripts.System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -22,6 +24,7 @@ namespace BlockPuzzleGameToolkit.Scripts.Popups
 {
     public class MainMenu : Popup
     {
+        private ResourceObject coinsResource;
         public CustomButton timedMode;
         public CustomButton classicMode;
         public CustomButton adventureMode;
@@ -35,9 +38,19 @@ namespace BlockPuzzleGameToolkit.Scripts.Popups
         [SerializeField]
         private Image background;
 
+        [SerializeField]
+        private TMP_Text scoreText;
+
         public Action OnAnimationEnded;
 
         //private const string LastFreeSpinTimeKey = "LastFreeSpinTime";
+
+        protected override void Awake()
+        {
+            base.Awake();
+
+            coinsResource = ResourceManager.instance.GetResource("Coins");
+        }
 
         private void Start()
         {
@@ -50,10 +63,30 @@ namespace BlockPuzzleGameToolkit.Scripts.Popups
             GameDataManager.LevelNum = PlayerPrefs.GetInt("Level", 1);
             var levelsCount = Resources.LoadAll<Level>("Levels").Length;
             //luckySpin.gameObject.SetActive(GameManager.instance.GameSettings.enableLuckySpin);
-            if(!GameManager.instance.GameSettings.enableTimedMode)
+            if (!GameManager.instance.GameSettings.enableTimedMode)
+            {
                 timedMode.gameObject.SetActive(false);
+            }
+
+            OnCoinsUpdateHandler(coinsResource.GetValue());
         }
-        
+
+        private void OnEnable()
+        {
+            coinsResource.OnResourceUpdate -= OnCoinsUpdateHandler;
+            coinsResource.OnResourceUpdate += OnCoinsUpdateHandler;
+        }
+
+        private void OnDisable()
+        {
+            coinsResource.OnResourceUpdate -= OnCoinsUpdateHandler;
+        }
+
+        private void OnCoinsUpdateHandler(int count)
+        {
+            scoreText.text = count.ToString(); 
+        }
+
         //private bool CanUseFreeSpinToday()
         //{
         //    if (!PlayerPrefs.HasKey(LastFreeSpinTimeKey))
