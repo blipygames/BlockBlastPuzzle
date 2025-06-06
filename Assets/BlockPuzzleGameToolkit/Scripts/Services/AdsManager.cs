@@ -26,7 +26,7 @@ namespace BlockPuzzleGameToolkit.Scripts.Services
         private readonly List<AdSetting> adList = new();
         private readonly List<AdUnit> adUnits = new();
         private EPlatforms platforms;
-
+        
         public override void Awake()
         {
             base.Awake();

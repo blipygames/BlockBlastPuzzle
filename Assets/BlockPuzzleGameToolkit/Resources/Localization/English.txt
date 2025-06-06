@@ -61,3 +61,4 @@ Timed : Timed
 ContinueWithExtraSeconds : Extra <color=yellow>+{continueTimerBonus}</color> sec
 YouHaveTimeLeft : You have <color=yellow>{timeLeft}</color> min left
 ContinueOrLoseProgress : New shapes or lose progress?
+ClaimReward : Claim Reward

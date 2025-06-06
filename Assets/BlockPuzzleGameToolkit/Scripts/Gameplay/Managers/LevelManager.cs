@@ -30,6 +30,8 @@ using UnityEngine.Events;
 using UnityEngine.Pool;
 using Random = UnityEngine.Random;
 using UnityEngine.InputSystem;
+using BlockPuzzleGameToolkit.Scripts.Services.Ads.AdUnits;
+using BlockPuzzleGameToolkit.Scripts.Services;
 
 namespace BlockPuzzleGameToolkit.Scripts.Gameplay
 {
@@ -43,6 +45,9 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
 
         public int comboCounter;
         private int missCounter;
+
+        [SerializeField]
+        private AdReference adReference;
 
         [SerializeField]
         private RectTransform gameCanvas;
@@ -141,6 +146,9 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
                 RestoreGameState();
             else if (gameMode == EGameMode.Timed)
                 RestoreTimedGameState();
+
+            AdsManager.instance.ShowAdByType(adReference, _ => Debug.LogError("Banner is showing in Game!"));
+
         }
 
         private void RestoreGameState()

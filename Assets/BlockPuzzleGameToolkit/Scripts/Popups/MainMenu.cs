@@ -15,6 +15,8 @@ using BlockPuzzleGameToolkit.Scripts.Data;
 using BlockPuzzleGameToolkit.Scripts.Enums;
 using BlockPuzzleGameToolkit.Scripts.GUI;
 using BlockPuzzleGameToolkit.Scripts.LevelsData;
+using BlockPuzzleGameToolkit.Scripts.Services;
+using BlockPuzzleGameToolkit.Scripts.Services.Ads.AdUnits;
 using BlockPuzzleGameToolkit.Scripts.System;
 using TMPro;
 using UnityEngine;
@@ -31,6 +33,9 @@ namespace BlockPuzzleGameToolkit.Scripts.Popups
         public CustomButton settingsButton;
         public CustomButton luckySpin;
         public GameObject playObject;
+        
+        [SerializeField]
+        private AdReference adReference;
 
         [SerializeField]
         private GameObject freeSpinMarker;
@@ -75,6 +80,8 @@ namespace BlockPuzzleGameToolkit.Scripts.Popups
         {
             coinsResource.OnResourceUpdate -= OnCoinsUpdateHandler;
             coinsResource.OnResourceUpdate += OnCoinsUpdateHandler;
+            
+            AdsManager.instance.ShowAdByType(adReference, _ => Debug.LogError("Banner is showing in Menu!"));
         }
 
         private void OnDisable()

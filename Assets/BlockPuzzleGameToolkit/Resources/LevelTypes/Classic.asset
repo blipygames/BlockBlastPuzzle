@@ -16,7 +16,7 @@ MonoBehaviour:
   targets:
   - {fileID: 11400000, guid: a101d12b2edd14116a6ec86daa24704b, type: 2}
   prePlayPopup: {fileID: 0}
-  preFailedPopup: {fileID: 0}
+  preFailedPopup: {fileID: 1194946714372672274, guid: 0845287dd41884c6087d82d3bc15ce85, type: 3}
   failedPopup: {fileID: 9018703703823889394, guid: 983b150f53a76437a99ed0a32525b82d, type: 3}
   preWinPopup: {fileID: 0}
   winPopup: {fileID: 0}

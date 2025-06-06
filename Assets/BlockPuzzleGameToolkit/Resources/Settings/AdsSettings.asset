@@ -18,7 +18,7 @@ MonoBehaviour:
     testInEditor: 1
     platforms: 1
     appId: 5698950
-    adsHandler: {fileID: 11400000, guid: 60c77287bd6d042938fbd15e5462e051, type: 2}
+    adsHandler: {fileID: 0}
     adElements:
     - placementId: Interstitial_iOS
       adReference: {fileID: 11400000, guid: f9303f4b583464bc08f45f673b581f90, type: 2}
@@ -37,7 +37,7 @@ MonoBehaviour:
     testInEditor: 1
     platforms: 0
     appId: 5698951
-    adsHandler: {fileID: 11400000, guid: 60c77287bd6d042938fbd15e5462e051, type: 2}
+    adsHandler: {fileID: 0}
     adElements:
     - placementId: Interstitial_Android
       adReference: {fileID: 11400000, guid: f9303f4b583464bc08f45f673b581f90, type: 2}
@@ -56,7 +56,7 @@ MonoBehaviour:
     testInEditor: 1
     platforms: 0
     appId: 5698951
-    adsHandler: {fileID: 11400000, guid: 74706189f5004431584663da028f09e5, type: 2}
+    adsHandler: {fileID: 0}
     adElements:
     - placementId: Banner_Android
       adReference: {fileID: 11400000, guid: 4396e62ba27584ef79ac362c4948ee63, type: 2}
@@ -69,7 +69,7 @@ MonoBehaviour:
     testInEditor: 1
     platforms: 1
     appId: 5698950
-    adsHandler: {fileID: 11400000, guid: 60c77287bd6d042938fbd15e5462e051, type: 2}
+    adsHandler: {fileID: 0}
     adElements:
     - placementId: Banner_iOS
       adReference: {fileID: 11400000, guid: 4396e62ba27584ef79ac362c4948ee63, type: 2}
@@ -97,8 +97,8 @@ MonoBehaviour:
         showOnOpen: 1
         showOnClose: 0
   - name: ironSource  Android
-    enable: 0
-    testInEditor: 0
+    enable: 1
+    testInEditor: 1
     platforms: 0
     appId: 1dc5839f5
     adsHandler: {fileID: 11400000, guid: 4d75985c87e4d4a06aeb409e363ab577, type: 2}
@@ -108,6 +108,12 @@ MonoBehaviour:
       popup:
         popup: {fileID: 4016055804716088334, guid: 42fecf35a1e774a20a5f0e45c3d3c10e, type: 3}
         showOnOpen: 1
+        showOnClose: 0
+    - placementId: 19328062
+      adReference: {fileID: 11400000, guid: 4396e62ba27584ef79ac362c4948ee63, type: 2}
+      popup:
+        popup: {fileID: 0}
+        showOnOpen: 0
         showOnClose: 0
     - placementId: 19328061
       adReference: {fileID: 11400000, guid: c831bd9c00a134b8db57a0d96d34a238, type: 2}

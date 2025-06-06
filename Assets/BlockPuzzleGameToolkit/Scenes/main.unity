@@ -2076,8 +2076,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 177.45001, y: -128}
-  m_SizeDelta: {x: 291.1, y: 99.96997}
+  m_AnchoredPosition: {x: 180, y: -128}
+  m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &281158591
 MonoBehaviour:
@@ -13367,6 +13367,7 @@ MonoBehaviour:
   settingsButton: {fileID: 728960682}
   luckySpin: {fileID: 51932003}
   playObject: {fileID: 729030103}
+  adReference: {fileID: 0}
   freeSpinMarker: {fileID: 80931283}
   background: {fileID: 0}
   scoreText: {fileID: 281158591}
@@ -17331,6 +17332,7 @@ MonoBehaviour:
   pool: {fileID: 1556230944}
   fxPool: {fileID: 3197640628567115026}
   comboCounter: 0
+  adReference: {fileID: 11400000, guid: 4396e62ba27584ef79ac362c4948ee63, type: 2}
   gameCanvas: {fileID: 5975784297327356092}
   shakeCanvas: {fileID: 6220992156710050639}
   scorePrefab: {fileID: 9090677211101329247, guid: 2ce09125bbf0e4fadac9a857e837ebc1, type: 3}

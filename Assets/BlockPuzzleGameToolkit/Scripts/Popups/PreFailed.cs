@@ -33,17 +33,21 @@ namespace BlockPuzzleGameToolkit.Scripts.Popups
 
         protected virtual void OnEnable()
         {
+            var coinsResource = ResourceManager.instance.GetResource("Coins");
             price = GameManager.instance.GameSettings.continuePrice;
             continuePrice.text = price.ToString();
             continueButton.onClick.AddListener(Continue);
-            
+
             InitializeTimer();
             
             timerText.text = timer.ToString();
             SoundBase.instance.PlaySound(SoundBase.instance.warningTime);
             InvokeRepeating(nameof(UpdateTimer), 1, 1);
+
             rewardButton.gameObject.SetActive(GameManager.instance.GameSettings.enableAds);
-            if(GameDataManager.GetLevel().enableTimer && timeLeftText != null)
+            continueButton.gameObject.SetActive(coinsResource.IsEnough(price));
+
+            if (GameDataManager.GetLevel().enableTimer && timeLeftText != null)
             {
                 timeLeftText.gameObject.SetActive(true);
             }
