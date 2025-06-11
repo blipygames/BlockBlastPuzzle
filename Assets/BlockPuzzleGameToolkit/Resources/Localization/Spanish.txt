@@ -62,3 +62,4 @@ ContinueWithExtraSeconds : Extra <color=yellow>+{continueTimerBonus}</color> seg
 YouHaveTimeLeft : Te quedan <color=yellow>{timeLeft}</color> min
 ContinueOrLoseProgress : ¿Nuevas formas o perder el progreso?
 ClaimReward : Reclamar recompensa
+LogOut : Finalizar la sesión
