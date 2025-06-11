@@ -1,4 +1,10 @@
 // Android Resolver Repos Start
+([rootProject] + (rootProject.subprojects as List)).each {
+    ext {
+        it.setProperty("android.useAndroidX", true)
+        it.setProperty("android.enableJetifier", true)
+    }
+}
 ([rootProject] + (rootProject.subprojects as List)).each { project ->
     project.repositories {
         def unityProjectPath = $/file:///**DIR_UNITYPROJECT**/$.replace("\\", "/")

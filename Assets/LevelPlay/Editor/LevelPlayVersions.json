@@ -515,6 +515,17 @@
       "dependencyXmlFileName": "ISBigoAdapterDependencies.xml",
       "SKAdNetworkIdXmlURL": "https://s3.amazonaws.com/ssa.public/Unity/SKAdNetwork-IDs/All/skadnetworks.bigo.plist.xml",
       "versions": {
+        "4.3.12.0": {
+          "ironSourceSdkVersion": "[8.4.0, 9.0[",
+          "android": {
+            "adapterVersion": "4.3.9",
+            "adNetworkVersion": "5.3.0"
+          },
+          "ios": {
+            "adapterVersion": "4.3.6.0",
+            "adNetworkVersion": "4.8.0"
+          }
+        },
         "4.3.11.0": {
           "ironSourceSdkVersion": "[8.4.0, 9.0[",
           "android": {
@@ -992,6 +1003,17 @@
       "dependencyXmlFileName": "ISAdMobAdapterDependencies.xml",
       "SKAdNetworkIdXmlURL": "https://s3.amazonaws.com/ssa.public/Unity/SKAdNetwork-IDs/All/skadnetworks.admob.plist.xml",
       "versions": {
+        "4.3.79.0": {
+          "ironSourceSdkVersion": "[8.4.0, 9.0[",
+          "android": {
+            "adapterVersion": "4.3.52",
+            "adNetworkVersion": "24.4.0"
+          },
+          "ios": {
+            "adapterVersion": "4.3.67.0",
+            "adNetworkVersion": "12.6.0"
+          }
+        },
         "4.3.78.0": {
           "ironSourceSdkVersion": "[8.4.0, 9.0[",
           "android": {
@@ -2614,6 +2636,17 @@
       "dependencyXmlFileName": "ISMyTargetAdapterDependencies.xml",
       "SKAdNetworkIdXmlURL": "https://s3.amazonaws.com/ssa.public/Unity/SKAdNetwork-IDs/All/skadnetworks.mytarget.plist.xml",
       "versions": {
+        "4.3.3.0": {
+          "ironSourceSdkVersion": "[8.4.0, 9.0[",
+          "android": {
+            "adapterVersion": "4.3.0",
+            "adNetworkVersion": "5.27.1"
+          },
+          "ios": {
+            "adapterVersion": "4.3.3.0",
+            "adNetworkVersion": "5.31.1"
+          }
+        },
         "4.3.2.0": {
           "ironSourceSdkVersion": "[8.4.0, 9.0[",
           "android": {

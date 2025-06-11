@@ -5,8 +5,14 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
+    path: Assets/BlockPuzzleGameToolkit/Scenes/load.unity
+    guid: cc34a24a4e1e9ca4b88e6d2ba37ea338
+  - enabled: 0
     path: Assets/BlockPuzzleGameToolkit/Scenes/main.unity
     guid: 88c9f51e8542e47d28fa27d5846353d5
+  - enabled: 1
+    path: Assets/LevelPlay/Samples/UnityLevelPlaySample/Scenes/LevelPlaySample.unity
+    guid: bd1eb3e1953724de08fadd7cbbc6d358
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: eb38d7ad7254d493fb82efdc68718f8f, type: 2}
