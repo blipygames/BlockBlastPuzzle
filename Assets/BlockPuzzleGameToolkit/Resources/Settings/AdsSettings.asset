@@ -36,7 +36,7 @@ MonoBehaviour:
     enable: 0
     testInEditor: 1
     platforms: 0
-    appId: 5698951
+    appId: 5874911
     adsHandler: {fileID: 0}
     adElements:
     - placementId: Interstitial_Android
@@ -47,6 +47,12 @@ MonoBehaviour:
         showOnClose: 0
     - placementId: Rewarded_Android
       adReference: {fileID: 11400000, guid: c831bd9c00a134b8db57a0d96d34a238, type: 2}
+      popup:
+        popup: {fileID: 0}
+        showOnOpen: 0
+        showOnClose: 0
+    - placementId: Banner_Android
+      adReference: {fileID: 11400000, guid: 4396e62ba27584ef79ac362c4948ee63, type: 2}
       popup:
         popup: {fileID: 0}
         showOnOpen: 0
@@ -109,14 +115,14 @@ MonoBehaviour:
         popup: {fileID: 4016055804716088334, guid: 42fecf35a1e774a20a5f0e45c3d3c10e, type: 3}
         showOnOpen: 1
         showOnClose: 0
-    - placementId: 19328062
-      adReference: {fileID: 11400000, guid: 4396e62ba27584ef79ac362c4948ee63, type: 2}
+    - placementId: 19328061
+      adReference: {fileID: 11400000, guid: c831bd9c00a134b8db57a0d96d34a238, type: 2}
       popup:
         popup: {fileID: 0}
         showOnOpen: 0
         showOnClose: 0
-    - placementId: 19328061
-      adReference: {fileID: 11400000, guid: c831bd9c00a134b8db57a0d96d34a238, type: 2}
+    - placementId: 19328062
+      adReference: {fileID: 11400000, guid: 4396e62ba27584ef79ac362c4948ee63, type: 2}
       popup:
         popup: {fileID: 0}
         showOnOpen: 0
