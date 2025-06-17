@@ -258,7 +258,7 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
             {
                 var canvasWidth = canvas.GetComponent<RectTransform>().rect.width;
                 var normalizedX = localPoint.x / canvasWidth;
-                var scaleFactorY = rectTransform.rect.height / canvas.GetComponent<RectTransform>().rect.height * 2.5f;
+                var scaleFactorY = rectTransform.rect.height / canvas.GetComponent<RectTransform>().rect.height * 5f;
 
                 rectTransform.anchoredPosition = new Vector2(
                     normalizedX * canvasWidth,

@@ -79,9 +79,7 @@ namespace BlockPuzzleGameToolkit.Scripts.Popups
         private void OnEnable()
         {
             coinsResource.OnResourceUpdate -= OnCoinsUpdateHandler;
-            coinsResource.OnResourceUpdate += OnCoinsUpdateHandler;
-            
-            AdsManager.instance.ShowAdByType(adReference, _ => Debug.LogError("Banner is showing in Menu!"));
+            coinsResource.OnResourceUpdate += OnCoinsUpdateHandler;            
         }
 
         private void OnDisable()

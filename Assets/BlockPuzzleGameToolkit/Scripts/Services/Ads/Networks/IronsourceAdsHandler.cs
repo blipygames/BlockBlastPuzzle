@@ -43,6 +43,13 @@ namespace BlockPuzzleGameToolkit.Scripts.Services.Ads.Networks
             IronSourceRewardedVideoEvents.onAdLoadFailedEvent += RewardedVideoAdShowFailedEvent;
             IronSourceRewardedVideoEvents.onAdRewardedEvent += Rewardeded;
 
+            IronSourceBannerEvents.onAdLoadedEvent += BannerAdLoadedEvent;
+            IronSourceBannerEvents.onAdLoadFailedEvent += BannerAdLoadFailedEvent;
+            IronSourceBannerEvents.onAdClickedEvent += BannerAdClickedEvent;
+            IronSourceBannerEvents.onAdScreenPresentedEvent += BannerAdScreenPresentedEvent;
+            IronSourceBannerEvents.onAdScreenDismissedEvent += BannerAdScreenDismissedEvent;
+            IronSourceBannerEvents.onAdLeftApplicationEvent += BannerAdLeftApplicationEvent;
+
             IronSourceEvents.onSdkInitializationCompletedEvent += SdkInitializationCompletedEvent;
             #endif
         }
@@ -86,6 +93,39 @@ namespace BlockPuzzleGameToolkit.Scripts.Services.Ads.Networks
             Debug.Log("Ironsource OnInterstitialAdReady");
             _listener?.OnAdsLoaded(obj.instanceId);
         }
+
+        private void BannerAdLoadedEvent(IronSourceAdInfo adInfo)
+        {
+            Debug.Log("IronSource Banner ad loaded");
+            _listener?.OnAdsLoaded(adInfo.instanceId);
+        }
+
+        private void BannerAdLoadFailedEvent(IronSourceError error)
+        {
+            Debug.Log($"IronSource Banner ad load failed. Error: {error.getCode()} - {error.getDescription()}");
+            _listener?.OnAdsLoadFailed();
+        }
+
+        private void BannerAdClickedEvent(IronSourceAdInfo adInfo)
+        {
+            Debug.Log("IronSource Banner ad clicked");
+        }
+
+        private void BannerAdScreenPresentedEvent(IronSourceAdInfo adInfo)
+        {
+            Debug.Log("IronSource Banner ad screen presented");
+        }
+
+        private void BannerAdScreenDismissedEvent(IronSourceAdInfo adInfo)
+        {
+            Debug.Log("IronSource Banner ad screen dismissed");
+        }
+
+        private void BannerAdLeftApplicationEvent(IronSourceAdInfo adInfo)
+        {
+            Debug.Log("IronSource Banner ad caused app to leave");
+        }
+
         #endif
 
         public override void Init(string _id, bool adSettingTestMode, IAdsListener listener)
@@ -107,7 +147,10 @@ namespace BlockPuzzleGameToolkit.Scripts.Services.Ads.Networks
             {
                 IronSource.Agent.showRewardedVideo();
             }
-
+            else if (adUnit.AdReference.adType == EAdType.Banner)
+            {
+                IronSource.Agent.displayBanner();
+            }
             _listener?.Show(adUnit);
             #endif
         }
@@ -122,6 +165,11 @@ namespace BlockPuzzleGameToolkit.Scripts.Services.Ads.Networks
             else if (adUnit.AdReference.adType == EAdType.Rewarded)
             {
                 IronSource.Agent.loadRewardedVideo();
+            }
+            else if (adUnit.AdReference.adType == EAdType.Banner)
+            {
+                IronSourceBannerSize bannerSize = IronSourceBannerSize.BANNER;
+                IronSource.Agent.loadBanner(bannerSize, IronSourceBannerPosition.BOTTOM);
             }
             #endif
         }
@@ -138,12 +186,23 @@ namespace BlockPuzzleGameToolkit.Scripts.Services.Ads.Networks
             {
                 return IronSource.Agent.isRewardedVideoAvailable();
             }
+
+            if (adUnit.AdReference.adType == EAdType.Banner)
+            {
+                return true;
+            }
             #endif
             return false;
         }
 
         public override void Hide(AdUnit adUnit)
         {
+#if IRONSOURCE
+            if (adUnit.AdReference.adType == EAdType.Banner)
+            {
+                IronSource.Agent.hideBanner();
+            }
+#endif
         }
     }
 }

@@ -17,5 +17,5 @@ MonoBehaviour:
   EnableIronsourceSDKInitAPI: 1
   AddIronsourceSkadnetworkID: 1
   DeclareAD_IDPermission: 1
-  EnableAdapterDebug: 0
-  EnableIntegrationHelper: 0
+  EnableAdapterDebug: 1
+  EnableIntegrationHelper: 1

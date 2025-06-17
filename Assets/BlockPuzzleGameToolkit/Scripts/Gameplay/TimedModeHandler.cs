@@ -12,7 +12,7 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
     public class TimedModeHandler : BaseModeHandler
     {
         [SerializeField]
-        private float gameDuration = 180f; // 3 minutes default game duration
+        private float gameDuration = 1800f; // 3 minutes default game duration
         
         private TimerManager _timerManager;
         private Sequence _pulseSequence;
@@ -102,7 +102,7 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
         private void AddBonusTime(int scoreValue)
         {
             // Add 10 second for every 10 points scored
-            float bonusTime = scoreValue;
+            float bonusTime = scoreValue / 2.0f;
             float currentTime = TimerManager.RemainingTime;
             TimerManager.InitializeTimer(Mathf.Min(currentTime + bonusTime, gameDuration));
         }
@@ -118,14 +118,14 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
         public override void OnLose()
         {
             // Only update best score if timer actually reached 0
-            if (TimerManager != null && TimerManager.RemainingTime <= 0)
-            {
+            //if (TimerManager != null && TimerManager.RemainingTime <= 0)
+            //{
                 bestScore = ResourceManager.instance.GetResource("TimedBestScore").GetValue();
                 if (score > bestScore)
                 {
                     ResourceManager.instance.GetResource("TimedBestScore").Set(score);
                 }
-            }
+            //}
             
             base.OnLose();
         }

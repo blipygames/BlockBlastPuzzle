@@ -10,13 +10,13 @@
 // // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // // THE SOFTWARE.
 
-using System;
-using System.Collections.Generic;
 using BlockPuzzleGameToolkit.Scripts.Popups;
 using BlockPuzzleGameToolkit.Scripts.Services.Ads;
 using BlockPuzzleGameToolkit.Scripts.Services.Ads.AdUnits;
 using BlockPuzzleGameToolkit.Scripts.Settings;
 using BlockPuzzleGameToolkit.Scripts.System;
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace BlockPuzzleGameToolkit.Scripts.Services
@@ -53,10 +53,10 @@ namespace BlockPuzzleGameToolkit.Scripts.Services
                         var adUnit = new AdUnit { PlacementId = adElement.placementId, AdReference = adElement.adReference, AdsHandler = t.adsHandler };
                         adUnit.OnInitialized = placementId => adUnit.Load();
                         adUnits.Add(adUnit);
-                        if (adUnit.AdReference.adType == EAdType.Banner && !GameManager.instance.IsNoAdsPurchased())
-                        {
-                            adUnit.Show();
-                        }
+                        //if (adUnit.AdReference.adType == EAdType.Banner && !GameManager.instance.IsNoAdsPurchased())
+                        //{
+                        //    adUnit.Show();
+                        //}
                     }
 
                     t.adsHandler?.Init(t.appId, false, new AdsListener(adUnits));
@@ -143,6 +143,17 @@ namespace BlockPuzzleGameToolkit.Scripts.Services
                     adUnit.Show();
                     adUnit.Load();
                     return;
+                }
+            }
+        }
+
+        public void HideAdByType(AdReference adRef)
+        {
+            foreach (var adUnit in adUnits)
+            {
+                if (adUnit.AdReference.adType == adRef.adType)
+                {
+                    adUnit.Hide();
                 }
             }
         }

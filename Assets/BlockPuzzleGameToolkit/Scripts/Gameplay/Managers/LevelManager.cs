@@ -267,6 +267,8 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
             {
                 timerManager.OnTimerExpired -= OnTimerExpired;
             }
+
+            AdsManager.instance.HideAdByType(adReference);
         }
 
         private void OnTimerExpired()
