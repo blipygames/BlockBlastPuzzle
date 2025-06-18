@@ -49,8 +49,6 @@ android {
 
     compileSdkVersion **APIVERSION**
     buildToolsVersion '**BUILDTOOLS**'
-    
-    namespace "com.unity3d.player"
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_11

@@ -103,7 +103,7 @@ MonoBehaviour:
         showOnOpen: 1
         showOnClose: 0
   - name: ironSource  Android
-    enable: 1
+    enable: 0
     testInEditor: 1
     platforms: 0
     appId: 22563ae35
