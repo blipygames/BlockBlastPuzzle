@@ -18,7 +18,7 @@ MonoBehaviour:
   enableInApps: 1
   enableLuckySpin: 1
   enablePreFailedPopup: 1
-  privacyPolicyUrl: https://docs.google.com/document/d/1xyvV9Fne3u58PU3yj9xirP4T9tmQBDQDiiFI_FhhgJc/edit?usp=sharing
+  privacyPolicyUrl: https://docs.google.com/document/d/16S6vWDqE7W_uW2XYscEhnEELyJF1OEc4o6W3J4F2x2A/edit?usp=sharing
   enableTimedMode: 1
   globalTimedModeSeconds: 60
   continueTimerBonus: 60
