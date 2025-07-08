@@ -34,7 +34,7 @@ MonoBehaviour:
         showOnClose: 0
   - name: Unity ads  Android
     enable: 0
-    testInEditor: 1
+    testInEditor: 0
     platforms: 0
     appId: 5874911
     adsHandler: {fileID: 0}
@@ -59,9 +59,9 @@ MonoBehaviour:
         showOnClose: 0
   - name: Unity ads banner android
     enable: 0
-    testInEditor: 1
+    testInEditor: 0
     platforms: 0
-    appId: 5698951
+    appId: 5874911
     adsHandler: {fileID: 0}
     adElements:
     - placementId: Banner_Android
@@ -104,7 +104,7 @@ MonoBehaviour:
         showOnClose: 0
   - name: ironSource  Android
     enable: 1
-    testInEditor: 1
+    testInEditor: 0
     platforms: 0
     appId: 22563ae35
     adsHandler: {fileID: 11400000, guid: 4d75985c87e4d4a06aeb409e363ab577, type: 2}
