@@ -172,7 +172,7 @@ namespace BlockPuzzleGameToolkit.Scripts.Popups
                 yield return new WaitForFixedUpdate();
             }
 
-            rb.angularDrag *= 100;
+            rb.angularDamping *= 100;
             yield return new WaitWhile(() => rb.angularVelocity != 0);
             isSpinning = false;
             CheckReward(GetWinReward());

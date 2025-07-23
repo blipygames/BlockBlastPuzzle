@@ -13,8 +13,8 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Purchasing;
-using UnityEngine.Purchasing.Extension;
+//using UnityEngine.Purchasing;
+//using UnityEngine.Purchasing.Extension;
 
 namespace BlockPuzzleGameToolkit.Scripts.Services.IAP
 {

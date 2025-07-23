@@ -12,8 +12,8 @@
 
 using System;
 using System.Threading.Tasks;
-using Unity.Services.Core;
-using Unity.Services.Core.Environments;
+//using Unity.Services.Core;
+//using Unity.Services.Core.Environments;
 using UnityEngine;
 
 namespace BlockPuzzleGameToolkit.Scripts.Services.IAP
